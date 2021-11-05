@@ -1,15 +1,15 @@
-function mul(num) {
-  let x = [];
-  for (let i = 0; i <= num; i++) {
-      x[i] = [[i * 0],[i * 1],[i * 2],[i * 3],[i * 4],[i * 5],[i * 6],[i * 7],[i * 8],[i * 9],[i * 10]]
+//Atividade Kenzie 45 - [Tabela De Multiplicação]
+
+function tabelaDeMultiplicacao(num) {
+  let matriz = []
+
+    for (let valor1=0 ; valor1<=num ; valor1++) {
+      matriz[valor1] = [] 
+
+    for (let valor2=0 ; valor2<=num ; valor2++) {
+      matriz[valor1][valor2] = valor1 * valor2
+    }
   }
-
-  console.table(x)
+console.table(matriz)
 }
-console.log(mul(10))
-
-/* código inacabado ainda (fiz somente com um loop)
- Ao contrario do console do CMD
- no console do navegador não se mostra os resultados corretos
- [ mostra somente Array(1) ]
-*/
+console.log(tabelaDeMultiplicacao(12))
